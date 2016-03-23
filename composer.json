@@ -9,6 +9,10 @@
             "email": "vytautas.ozolins@gmail.com"
         }
     ],
+    "dist": {
+        "type": "vcs",
+        "url": "git@github.com:vytozo/php-finance.git"
+    },
     "require": {},
     "autoload": {
         "psr-4": {
