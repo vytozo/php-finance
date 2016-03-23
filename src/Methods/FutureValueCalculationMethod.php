@@ -41,7 +41,7 @@ class FutureValueCalculationMethod implements CalculationMethodInterface{
         /* @var $calculationParameters FutureValueCalculationParametersInterface */
         if ($calculationParameters instanceof FutureValueCalculationParametersInterface){
             if($calculationParameters->validate()){
-                return $calculationParameters->getPresentValue() * (1 + $calculationParameters->getInterestRate()) ^ $calculationParameters->getPeriodCount();
+                return $calculationParameters->getPresentValue() * pow((1 + $calculationParameters->getInterestRate()), $calculationParameters->getPeriodCount());
             } else {
                 throw new InvalidArgumentException('Missing parameters');
             }
