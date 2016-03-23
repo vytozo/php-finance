@@ -1,0 +1,17 @@
+{
+    "name": "vytozo/php-finance",
+    "description": "Simple financial functions",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Vytautas Ozolinš",
+            "email": "vytautas.ozolins@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/" 
+        }
+    }
+}
